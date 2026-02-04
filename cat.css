@@ -1,0 +1,16 @@
+#catImg{
+    height: 400px;
+    width: 350px;
+}
+#bulbImg{
+    height: 350px;
+    width: 250px;
+    margin-left: 60px;
+}
+#cardbutton{
+    background-color: aliceblue;
+    margin-left: 60px;
+    padding: 20px;
+    width: 200px;
+
+}
