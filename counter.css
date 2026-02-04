@@ -1,0 +1,49 @@
+.maincard{
+    background-color: beige;
+    width: 450px;
+    height:500px;
+    padding: 10px;
+}
+.headingcount{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.para{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin-left: 180px;
+
+}
+.buttonincre{
+    background-color: lightgreen;
+    border-radius: 0px;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    margin-left: 75px;
+}
+.buttonreset{
+    background-color: lightblue;
+    border-radius: 0px;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    margin-left: 25px;
+}
+.buttondecre{
+    background-color: red;
+    border-radius: 0px;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    margin-left: 25px;
+}
