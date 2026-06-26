@@ -37,8 +37,8 @@ inputEl.addEventListener('keydown',function(each){
     let option={
         method:'GET'
     }
-     countrySpin.classList.add('d-none');
     if(each.key==='Enter'){
+        countrySpin.classList.toggle('d-none');
         countryCardEl1.textContent="";
         let countrysearched=inputEl.value;
         fetch("https://apis.ccbp.in/countries-data",option)
@@ -46,7 +46,7 @@ inputEl.addEventListener('keydown',function(each){
             return response.json();
         })
         .then(function(data){
-            countrySpin.classList.add('d-none');
+            countrySpin.classList.toggle('d-none');
             if(countrysearched.trim()!==''){
                 for(let item of data){
                     if(item.name.includes(countrysearched)){
