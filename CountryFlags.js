@@ -37,9 +37,8 @@ inputEl.addEventListener('keydown',function(each){
     let option={
         method:'GET'
     }
-    
+     countrySpin.classList.add('d-none');
     if(each.key==='Enter'){
-        countrySpin.classList.add('d-none');
         countryCardEl1.textContent="";
         let countrysearched=inputEl.value;
         fetch("https://apis.ccbp.in/countries-data",option)
