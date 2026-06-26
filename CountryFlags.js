@@ -1,6 +1,7 @@
 let inputEl=document.getElementById('searchInput');
 let rowContainerEl=document.getElementById('rowcontainer');
 let countryCardEl1=document.createElement('div');
+let countrySpin=document.getElementById('spinner');
 rowContainerEl.appendChild(countryCardEl1);
 
 function createCards(items){
@@ -38,6 +39,7 @@ inputEl.addEventListener('keydown',function(each){
     }
     
     if(each.key==='Enter'){
+        countrySpin.classList.add('d-none');
         countryCardEl1.textContent="";
         let countrysearched=inputEl.value;
         fetch("https://apis.ccbp.in/countries-data",option)
@@ -45,6 +47,7 @@ inputEl.addEventListener('keydown',function(each){
             return response.json();
         })
         .then(function(data){
+            countrySpin.classList.add('d-none');
             if(countrysearched.trim()!==''){
                 for(let item of data){
                     if(item.name.includes(countrysearched)){
